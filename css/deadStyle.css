@@ -1,0 +1,219 @@
+* {
+    font-family: "Poppins", sans-serif;
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.frontHeader {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: rgb(24, 23, 24);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2px 10%;
+    background-color: rgb(121, 33, 121);
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.frontname {
+    color: rgb(130, 85, 153);
+    font-size: 35px;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+.name {
+    color: rgb(130, 85, 153);
+    font-size: 35px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.selfie {width: 60%;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+}
+
+.intro-content p {margin-bottom: 25px;}
+
+#email {margin: 5px;
+        background-color: rgb(130, 85, 153);
+        color: white;
+        padding: 1em;
+        text-decoration: none;
+        border-radius: 12px;
+}
+
+#hello {
+    color: rgb(130, 85, 153);
+    font-size: 80px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-right: 20px;
+    /* text-decoration: underline; */
+}
+
+.intro p {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.NavBar {
+    /* background-color: aqua; */
+    font-size: 30px;
+    text-align: right;
+}
+
+.NavBar a {
+    text-decoration: none;
+    color: white;
+}
+
+.NavBar a.current {
+    background-color: rgb(130, 85, 153);
+    color: white;
+}
+
+.NavBar a:hover {
+    background-color: rgb(130, 85, 153);
+    color: white;
+}
+
+.mobileNav {
+    /* background-color: aqua; */
+    font-size: 30px;
+    text-align: center;
+    padding: 0;
+    color: white;
+}
+
+.mobileNav a {
+    text-decoration: none;
+    color: white;
+}
+
+.mobileNav a.current {
+    background-color: rgb(130, 85, 153);
+    color: white;
+}
+
+.mobileNav a:hover {
+    background-color: rgb(130, 85, 153);
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .intro-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #hello {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .intro-content img {
+        margin-right: auto;
+        width: 100%;
+    }
+
+    /* .contactContainer {
+        flex-direction: column;
+        text-align: center;
+        margin-right: auto;
+    } */
+
+    #form {margin-top: 10vh;}
+}
+
+#boldname {font-size: larger;
+  }
+
+.contactContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10vh;
+  
+  }
+
+#form {display: flex;
+flex-direction: column;
+width: 800px;
+}
+
+.contactContainer input, textarea, input {border-radius: 12px;
+    padding: 5px;
+    margin: 5px;
+    border: 0;
+    font-family: inherit;}
+
+.contactContainer textarea {height: 100px;}
+
+#sub {background-color: rgb(130, 85, 153);
+    color: white;
+}
+
+.contactContainer label {text-align: center;}
+
+.contactPage {display: flex;
+flex-direction: row;
+justify-content: center;
+align-content: center;
+width: 100%;
+margin-top: 20px;
+}
+
+.contactPage a {margin-left: 10px;
+margin-right: 10px;}
+
+@media screen and (max-width: 600px) {
+    .desktopHeader {display: none;}
+    .mobileHeader {display: block;}
+}
+
+@media screen and (min-width: 601px) {
+    .mobileHeader {display: none;}
+    .desktopHeader {display: flex;}
+}
+
+header p {margin-top: 0%;
+margin-bottom: 0%;
+margin-left: 0%;
+margin-right: 0%;
+}
