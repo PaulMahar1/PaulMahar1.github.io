@@ -60,23 +60,75 @@ Grey: rgba(89,88,89,255) */
     background-color: rgba(89,88,89,255);
     }
   
-.linkedin
-    { grid-area: linkedin; 
+
+.linkedin {
+    grid-area: linkedin;
     background-color: rgba(12,192,223,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkedin img
+    {max-height: 80%;
+    max-width: 80%;
     }
   
 .mail
     { grid-area: mail; 
     background-color: rgba(12,192,223,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.mail img
+    {max-height: 80%;
+    max-width: 80%;
     }
   
 .git
     { grid-area: git; 
     background-color: rgba(12,192,223,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.git img
+    {max-height: 100%;
+    max-width: 100%;
     }
   
 .projects
-    { grid-area: projects; 
+    {grid-area: projects; 
     background-color: rgba(12,192,223,255);
     }
+
+.form
+    {display: inline-block;
+    
+    }
+
+#yourName 
+    {background-color: transparent;
+    border: 1px white solid;
+    border-radius: 15px;
+    width: 48%;
+    }
   
+#yourEmail
+    {background-color: transparent;
+    display: inline-block;
+    border: 1px white solid;
+    border-radius: 15px;
+    width: 48%
+    }
+
+#textArea
+    {background-color: transparent;
+    border: 1px white solid;
+    border-radius: 15px;
+    overflow: hidden;
+    resize: none;
+    }
