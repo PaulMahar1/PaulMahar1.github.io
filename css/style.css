@@ -34,6 +34,22 @@ Grey: rgba(89,88,89,255) */
 .name
     {grid-area: name; 
     background-color: rgba(12,192,223,255);
+    text-align: left;
+    color: white;
+    }
+
+    .name p
+    {display: inline-block;
+    margin: 0;
+    }
+
+.name .intern
+    {text-align: right;
+    }
+
+.name h1
+    {color: white;
+    font-size: ;
     }
 
 .skills
@@ -42,6 +58,14 @@ Grey: rgba(89,88,89,255) */
     font-size: 3em;
     text-align: center;
     }
+
+.skills a:link,
+.skills a:visited,
+.skills a:hover,
+.skills a:active
+    {
+    color: rgba(12, 192, 223);
+    }   
 
 a:link
     {color: white;
@@ -115,8 +139,8 @@ a:active
     }
 
 .git img
-    {max-height: 100%;
-    max-width: 100%;
+    {max-height: 80%;
+    max-width: 80%;
     }
  
 .projects
@@ -152,3 +176,55 @@ a:active
     overflow: hidden;
     resize: none;
     }
+
+
+/* SKILLS SPECIFIC */
+
+.skillIcons
+    {grid-area: photo;
+    }
+
+.skillIcons img 
+    {object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    object-position: 0% 0%;
+    border-radius: 15px;
+    }
+
+.skillsSelfie
+    {grid-area: form;
+    }
+
+.skillsSelfie img 
+    {object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    object-position: 0% 0%;
+    border-radius: 15px;
+    }
+
+.icon
+    {
+    width: 20%;
+    }
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto; /* Reset grid-template-rows */
+    }
+
+    /* Define grid areas for each element */
+    .skills { grid-area: skills; }
+    .projects { grid-area: projects; }
+    .name { grid-area: name; }
+    .photo { grid-area: photo; }
+    .linkedin { grid-area: linkedin; }
+    .mail { grid-area: mail; }
+    .git { grid-area: git; }
+    .form { grid-area: form; }
+}
