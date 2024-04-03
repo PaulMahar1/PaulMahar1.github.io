@@ -182,6 +182,8 @@ a:active
 
 .skillIcons
     {grid-area: photo;
+    background-color: rgba(89,88,89,255);
+    justify-content: space-evenly;
     }
 
 .skillIcons img 
@@ -206,8 +208,18 @@ a:active
 
 .icon
     {
-    width: 20%;
+    max-width: 20%;
+
     }
+
+/* PROJECT SPECIFIC */
+
+.largeIcon
+    {
+    max-width: 40%;
+    display: block;
+    }
+
 
 
 /* MEDIA QUERIES */
