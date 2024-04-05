@@ -2,7 +2,7 @@
 Blue: rgba(12,192,223,255)
 Grey: rgba(89,88,89,255) */
 
-
+*{font-family: "Poppins", sans-serif;}
 
 .container 
     {  display: grid;
@@ -38,18 +38,18 @@ Grey: rgba(89,88,89,255) */
     color: white;
     }
 
-    .name p
+.name p
     {display: inline-block;
     margin: 0;
     }
 
-.name .intern
+.intern
     {text-align: right;
     }
 
 .name h1
     {color: white;
-    font-size: ;
+    font-size: 5rem;
     }
 
 .skills
@@ -150,32 +150,36 @@ a:active
     text-align: center;
     }
 
-.form
-    {display: inline-block; 
-    }
-
-#yourName 
-    {background-color: transparent;
-    border: 1px white solid;
+.form {
+    display: inline-block;
+}
+.form label {
+    margin-bottom: 5px;
+}
+.form input[type="text"],
+.form input[type="email"] {
+    background-color: transparent;
+    border: 2px white solid;
     border-radius: 15px;
     width: 48%;
-    }
-
-#yourEmail
-    {background-color: transparent;
-    display: inline-block;
-    border: 1px white solid;
-    border-radius: 15px;
-    width: 48%
-    }
-
-#textArea
-    {background-color: transparent;
-    border: 1px white solid;
+    margin-bottom: 10px;
+}
+.form textarea {
+    background-color: transparent;
+    border: 2px white solid;
     border-radius: 15px;
     overflow: hidden;
     resize: none;
-    }
+    width: 80%;
+    margin-bottom: 10px;
+}
+.form .sub {
+    border-radius: 15px;
+    background-color: rgba(12, 192, 223, 255);
+    border: none;
+    color: white;
+    font-size: larger;
+}
 
 
 /* SKILLS SPECIFIC */
@@ -230,7 +234,6 @@ a:active
         grid-template-rows: auto; /* Reset grid-template-rows */
     }
 
-    /* Define grid areas for each element */
     .skills { grid-area: skills; }
     .projects { grid-area: projects; }
     .name { grid-area: name; }
