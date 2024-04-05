@@ -4,6 +4,8 @@ Grey: rgba(89,88,89,255) */
 
 *{font-family: "Poppins", sans-serif;}
 
+
+/* MAIN GRID */
 .container 
     {  display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -23,7 +25,7 @@ Grey: rgba(89,88,89,255) */
       "mail form form form form form form photo photo photo photo photo photo photo photo photo photo"
       "git form form form form form form photo photo photo photo photo photo photo photo photo photo";
     }
-
+/* USE TO HELP VISUALIZE GRID */
 /* div
     {border: red solid 1px;
     } */
@@ -61,7 +63,8 @@ Grey: rgba(89,88,89,255) */
     font-size: 4em;
     text-align: center;
     }
-
+ 
+/* ENSURE SKILLS/HOME STAYS BLUE */
 .skills a:link,
 .skills a:visited,
 .skills a:hover,
