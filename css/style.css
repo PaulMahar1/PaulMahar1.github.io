@@ -228,6 +228,10 @@ a:active
     {
     display: flex;
     flex-wrap: wrap;
+    color: white;
+    background-color: rgba(89,88,89,255);
+    font-size: larger;
+    justify-content: center;
     }
 
 .skillsFrame
