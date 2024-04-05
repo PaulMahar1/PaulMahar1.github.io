@@ -314,6 +314,7 @@ a:active
         grid-auto-flow: row;
         margin: 15px;
         width: 95vw;
+        height: auto;
         grid-template-areas:
         "skills skills skills projects projects projects"
         "name name name name name name"
